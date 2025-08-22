@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+
+header {
+    background-color: #284B63 ;
+    border-radius: 10px;
+
+}
+
+body {
+    background-color: white ;
+}
+
+.header-top {
+    font-family: Alumni Sans SC;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+.left-top {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 40px;
+    margin-left: 100px;
+}
+
+
+
+.right-top a {
+    color: #284B63;         
+    text-decoration: none;  
+    font-family: inherit;   
+    font-size: inherit; 
+        
+}
+.btn-inicio {
+    background-color: #D9D9D9;
+    padding: 10px;
+    border-radius: 10px;
+    width: 150px; 
+    text-decoration: none;
+    font-family: Alumni Sans SC;
+    font-size: 30px;
+
+}
+.btn-proyectos {
+    background-color: #D9D9D9;
+    padding: 10px;
+    border-radius: 10px;
+    width: 150px; 
+    text-decoration: none;
+    font-family: Alumni Sans SC;
+    font-size: 30px; 
+}
+.btn-acercademi {
+    background-color: #D9D9D9;
+    padding: 10px;
+    border-radius: 10px;
+    width: 150px; 
+    text-decoration: none;
+    font-family: Alumni Sans SC;
+    font-size: 30px;  
+}
+.btn-contacto {
+    background-color: #D9D9D9;
+    padding: 10px;
+    border-radius: 10px;
+    width: 150px; 
+    text-decoration: none;
+    font-family: Alumni Sans SC;
+    font-size: 30px;
+}
+.btn-inicio:hover {
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(40, 75, 99, 0.2);
+    transition: 0.2s;
+}
+
+.btn-proyectos:hover {
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(40, 75, 99, 0.2);
+    transition: 0.2s;
+}
+.btn-acercademi:hover {
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(40, 75, 99, 0.2);
+    transition: 0.2s;
+
+}
+.btn-contacto:hover {
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(40, 75, 99, 0.2);
+    transition: 0.2s;
+}
+.first-div-body {
+    flex: 1;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    flex-direction: row;
+    font-family: Alumni Sans SC;
+}
+
+.div-left-body {
+    flex: 1;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    flex-direction: column;
+    gap: 10px;
+}
+.programador {
+    width: 500px;
+    margin-top: 90px;
+    margin-left: 150px;
+    flex: 1;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    flex-direction: column;
+
+}
+.div-right-body {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 30px;
+    margin-right: 150px;
+    margin-left: 150px;
+    row-gap: 20px;
+}
+.texto-h1-body {
+    margin-bottom: 0;
+}
+
+.texto-h3-body {
+    margin-top: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.first-sect-body {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: Alumni Sans SC;
+    
+}
+
+.section-acercademi {
+    background-color: #284B63 ;
+    border-radius: 10px;
+   
+
+}
+.second-div-body {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;   
+    margin-top: 40px; 
+    color: white;
+}
+
+
+.second-div-body h2 {
+    font-family: Alumni Sans SC;;
+    font-size: 50px;
+    margin-bottom: 0;
+    color: #FFFFFF;
+}
+.three-div-body h3 {
+    font-family: Alumni Sans SC;;
+    font-size: 30px;
+    text-align: center;
+    margin-left: 140px;
+    margin-right: 140px;
+    padding: 40px 140px;
+    color: #FFFFFF;
+
+}
+.div-proyectos {
+    text-align: center;
+}
+    
+
+.div-proyectos h2 {
+    font-family: Alumni Sans SC;
+    font-size: 50px;
+    margin-bottom: 0;
+    text-align: center;
+    margin-left: 140px;
+    margin-right: 140px;
+    padding: 40px 140px;
+}
+.btn-div-proyectos {
+    background-color: #284B63;
+    padding: 10px;
+    border-radius: 10px;
+    width: auto; 
+    text-decoration: none;
+    font-family: Alumni Sans SC;
+    font-size: 30px; 
+    color: white;
+    align-items: center;
+}
+.btn-div-proyectos:hover {
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(40, 75, 99, 0.2);
+    transition: 0.2s;
+    color: black;
+    border: 1px solid black ;
+}    
+
+.div-proyectos h3 {
+    font-family: Alumni Sans SC;;
+    font-size: 50px;
+    margin-bottom: 0;
+    text-align: center;
+    margin-left: 140px;
+    margin-right: 140px;
+    padding: 40px 140px;
+}
+
+.section-contacto {
+    background-color: #284B63;
+    border-radius: 10px;
+    font-family: Alumni Sans SC;
+
+}
+.section-contacto h2 {
+    font-size: 50px;
+}
+.section-contacto h3 {
+    font-size: 30px;
+}
+.div-contacto {
+    margin-top: 200px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;   
+    margin-top: 40px; 
+    color: white;
+}
+
+.div-form {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;   
+    margin-top: 0; 
+    color: white;
+    text-decoration: none;
+}
+label {
+    font-size: 30px;
+}
+
+input {
+    width: 300px;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 15px;
+    
+}
+textarea {
+    display: block;
+    padding: 40px;
+    width: 245px;
+    resize: none;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.btn-mensaje {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-content: center;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    
+    text-decoration: none;
+    font-family: Alumni Sans SC;
+    font-size: 30px; 
+    color: black;
+    
+}
+.ul-btn-mensaje {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-content: center;
+}
+
