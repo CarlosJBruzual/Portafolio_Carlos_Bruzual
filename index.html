@@ -6,6 +6,27 @@
     <title>Carlos J. Bruzual</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("4WWsNx-Qk8_GaVpZc"); // ← Reemplaza con tu User ID de EmailJS
+  })();
+</script>
+<script>
+document.getElementById("form").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  emailjs.sendForm("service_hsvwyz6", "template_3be8i4l", this)
+    .then(() => {
+      alert("Mensaje enviado correctamente.");
+    }, (error) => {
+      alert("Error al enviar el mensaje.");
+      console.error(error);
+    });
+});
+</script>
+
+
 <header>
     <div class="header-top" id="header-up">
         <div class="left-top">
@@ -63,7 +84,7 @@
                 ¡No dudes en contactarme!</h3>
         </div>
         <div class="div-form">
-            <form action="enviar.php" method="POST" class="form">
+            <form id="form" class="form">
                 <ul>
                     <li><label for="nombre">Nombre</label></li>                    
 
