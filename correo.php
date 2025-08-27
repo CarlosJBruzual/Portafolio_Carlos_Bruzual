@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mensaje = htmlspecialchars(trim($_POST['mensaje']));
 
     // Dirección de destino
-    $destino = "tucorreo@ejemplo.com"; // ← Reemplaza con tu correo real
+    $destino = "carlosbruzua@rivasdev.com"; // ← Reemplaza con tu correo real
 
     // Asunto y contenido del mensaje
     $asunto = "Nuevo mensaje desde tu portafolio";
