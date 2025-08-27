@@ -63,24 +63,24 @@
                 ¡No dudes en contactarme!</h3>
         </div>
         <div class="div-form">
-            <form action="#" class="form">
+            <form action="enviar.php" method="POST" class="form">
                 <ul>
                     <li><label for="nombre">Nombre</label></li>                    
-                    
-                        <input type="text" placeholder="Tu nombre...">
-                    
+
+                        <input type="text" name="nombre" placeholder="Tu nombre..." required>
+
+                    </li>
                     <li><label for="email">Email</label></li>    
-                    
-                        <input type="email" placeholder="Tu Email...">
-                    
+
+                        <input type="email" name="email" placeholder="Tu Email..." required>
+                    </li>
                     <li><label for="mensaje">Deja tu Mensaje</label></li>
-                    
-                        <textarea placeholder="Mensaje... "></textarea> 
-                    
-                    
+
+                        <textarea name="mensaje" placeholder="Mensaje... " required></textarea>
+
                 </ul>
                 <ul class="ul-btn-mensaje">
-                    <button class="btn-mensaje">Enviar Mensaje</button>
+                    <button type:="submit" class="btn-mensaje">Enviar Mensaje</button>
                 </ul>
                            
             </form>
