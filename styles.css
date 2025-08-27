@@ -349,19 +349,19 @@ textarea {
     bottom: 40px;
     right: 40px;
     z-index: 1000;
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #284B63;
+    color: #fff; /* Flecha blanca */
     border: none;
     border-radius: 50%;
     width: 60px;
     height: 60px;
-    font-size: 32px; /* Aumenta el tamaño de la flecha */
+    font-size: 32px;
     cursor: pointer;
     box-shadow: 0 4px 12px rgba(40, 75, 99, 0.2);
-    transition: background-color 0.2s;
+    text-decoration: none;
+    transition: background-color 0.2s, color 0.2s;
 }
 #btn-volver-inicio:hover {
-    background-color: #284B63;
-    border: solid 3px white;
-    color: white
+    background-color: white;
+    color: #284B63; /* Flecha blanca al hacer hover */
 }
