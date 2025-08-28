@@ -84,23 +84,26 @@
             </form>
         </div>
     </section>
-    <div>
+        <div>
         <a href="#header-up" id="btn-volver-inicio" title="Volver arriba">&#8679;</a>
     </div>
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script>
   
-    emailjs.init("4WWsNx-Qk8_GaVpZc"); // ← Reemplaza con tu User ID de EmailJS
+    // Public Key (Correcta)
+    emailjs.init("4WWsNx-Qk8_GaVpZc"); 
 
 
     document.getElementById("form").addEventListener("submit", function(e) {
     e.preventDefault();
 
+    // Service ID (Correcto) y Template ID (CORREGIDO)
     emailjs.sendForm("service_hsvwyz6", "template_q2vqxnt", this)
     .then(() => {
       alert("Mensaje enviado correctamente.");
+      document.getElementById("form").reset(); // Limpia el formulario
     }, (error) => {
-      alert("Error al enviar el mensaje.");
+      alert("Error al enviar el mensaje. Revisa la consola.");
       console.error(error);
     });
 });
