@@ -84,29 +84,37 @@
             </form>
         </div>
     </section>
-        <div>
+            <div>
         <a href="#header-up" id="btn-volver-inicio" title="Volver arriba">&#8679;</a>
     </div>
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script>
-  
-    // Public Key (Correcta)
-    emailjs.init("4WWsNx-Qk8_GaVpZc"); 
+    // Inicializa EmailJS con tu Public Key
+    emailjs.init("4WWsNx-Qk8_GaVpZc");
 
+    const form = document.getElementById("form");
 
-    document.getElementById("form").addEventListener("submit", function(e) {
-    e.preventDefault();
+    form.addEventListener("submit", function(e) {
+        e.preventDefault(); // Previene el envío por defecto
 
-    // Service ID (Correcto) y Template ID (CORREGIDO)
-    emailjs.sendForm("service_hsvwyz6", "template_q2vqxnt", this)
-    .then(() => {
-      alert("Mensaje enviado correctamente.");
-      document.getElementById("form").reset(); // Limpia el formulario
-    }, (error) => {
-      alert("Error al enviar el mensaje. Revisa la consola.");
-      console.error(error);
+        // Creamos manualmente los parámetros para la plantilla
+        const templateParams = {
+            name: form.querySelector('input[name="name"]').value,
+            email: form.querySelector('input[name="email"]').value,
+            mensaje: form.querySelector('textarea[name="mensaje"]').value
+        };
+
+        // Usamos emailjs.send() en lugar de sendForm()
+        emailjs.send("service_hsvwyz6", "template_q2vqxnt", templateParams)
+            .then(() => {
+                alert("Mensaje enviado correctamente.");
+                form.reset(); // Limpia el formulario
+            }, (error) => {
+                alert("Error al enviar el mensaje. Revisa la consola.");
+                // Mostramos el error completo para más detalles
+                console.log('FALLÓ...', error);
+            });
     });
-});
 </script>
 </body>
 
