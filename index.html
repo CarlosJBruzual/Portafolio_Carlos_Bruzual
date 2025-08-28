@@ -80,8 +80,7 @@
                 </ul>
                 <ul class="ul-btn-mensaje">
                     <button type="submit" class="btn-mensaje">Enviar Mensaje</button>
-                </ul>
-                           
+                </ul>                   
             </form>
         </div>
     </section>
@@ -90,16 +89,14 @@
     </div>
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script>
-  (function(){
+  
     emailjs.init("4WWsNx-Qk8_GaVpZc"); // ← Reemplaza con tu User ID de EmailJS
-  })();
-</script>
 
-<script>
-document.getElementById("form").addEventListener("submit", function(e) {
-  e.preventDefault();
 
-  emailjs.sendForm("service_hsvwyz6", "template_3be8i4l", this)
+    document.getElementById("form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm("service_hsvwyz6", "template_3be8i4l", this)
     .then(() => {
       alert("Mensaje enviado correctamente.");
     }, (error) => {
