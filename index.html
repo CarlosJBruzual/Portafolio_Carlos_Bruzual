@@ -86,36 +86,40 @@
     </section>
             <div>
         <a href="#header-up" id="btn-volver-inicio" title="Volver arriba">&#8679;</a>
+      <div>
+        <a href="#header-up" id="btn-volver-inicio" title="Volver arriba">&#8679;</a>
     </div>
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script>
-    // Inicializa EmailJS con tu Public Key
-    emailjs.init("4WWsNx-Qk8_GaVpZc");
 
-    const form = document.getElementById("form");
+    <!-- URL del SDK actualizada -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
 
-    form.addEventListener("submit", function(e) {
-        e.preventDefault(); // Previene el envío por defecto
-
-        // Creamos manualmente los parámetros para la plantilla
-        const templateParams = {
-            name: form.querySelector('input[name="name"]').value,
-            email: form.querySelector('input[name="email"]').value,
-            mensaje: form.querySelector('textarea[name="mensaje"]').value
-        };
-
-        // Usamos emailjs.send() en lugar de sendForm()
-        emailjs.send("service_hsvwyz6", "template_q2vqxnt", templateParams)
-            .then(() => {
-                alert("Mensaje enviado correctamente.");
-                form.reset(); // Limpia el formulario
-            }, (error) => {
-                alert("Error al enviar el mensaje. Revisa la consola.");
-                // Mostramos el error completo para más detalles
-                console.log('FALLÓ...', error);
+    <!-- Código de inicialización y envío actualizado -->
+    <script type="text/javascript">
+        (function(){
+            // La inicialización ahora usa un objeto
+            emailjs.init({
+                publicKey: "4WWsNx-Qk8_GaVpZc",
             });
-    });
-</script>
+        })();
+
+        const form = document.getElementById("form");
+
+        form.addEventListener("submit", function(e) {
+            e.preventDefault();
+
+            // Usamos sendForm que es más simple y debería funcionar ahora
+            emailjs.sendForm("service_hsvwyz6", "template_q2vqxnt", this)
+                .then(() => {
+                    alert("Mensaje enviado correctamente.");
+                    form.reset();
+                }, (error) => {
+                    alert("Error al enviar el mensaje. Revisa la consola.");
+                    console.log('FALLÓ...', error);
+                });
+        });
+    </script>
 </body>
 
 </html>
