@@ -400,3 +400,111 @@ textarea {
     /* Sombra sutil en el icono para que resalte */
     filter: drop-shadow(0 1px 1px rgba(0,0,0,0.2));
 }
+
+@media (max-width: 1024px) {
+    .left-top {
+        margin-left: 40px;
+        font-size: 35px;
+    }
+
+    .programador {
+        width: 400px;
+        margin-left: 50px;
+    }
+
+    .div-right-body {
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
+    .three-div-body h3,
+    .div-proyectos h2,
+    .div-proyectos h3 {
+        padding: 30px 60px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+
+/* Para Móviles (hasta 768px) */
+@media (max-width: 768px) {
+    .header-top {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .left-top {
+        margin-left: 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .right-top {
+        justify-content: center;
+        width: 100%;
+        gap: 15px;
+        font-size: 20px;
+    }
+
+    .first-div-body {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .programador {
+        width: 80%;
+        max-width: 350px;
+        margin: 40px 0 0 0;
+        order: 2; /* Mueve la imagen debajo del texto */
+    }
+
+    .div-right-body {
+        order: 1; /* Mueve el texto encima de la imagen */
+        margin: 0 20px;
+        font-size: 24px;
+    }
+
+    .second-div-body h2,
+    .div-proyectos h2,
+    .section-contacto h2 {
+        font-size: 40px;
+    }
+
+    .three-div-body h3,
+    .div-proyectos h3,
+    .section-contacto h3 {
+        font-size: 24px;
+        padding: 20px;
+    }
+
+    .form ul {
+        padding: 0;
+    }
+
+    input, textarea {
+        width: 100%;
+        box-sizing: border-box; /* Asegura que el padding no desborde */
+    }
+
+    textarea {
+        width: 100%; /* Ancho completo para el textarea */
+    }
+
+    #btn-volver-inicio,
+    #btn-whatsapp {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+    }
+
+    #btn-volver-inicio {
+        right: 20px;
+    }
+
+    #btn-whatsapp {
+        left: 20px;
+    }
+}
