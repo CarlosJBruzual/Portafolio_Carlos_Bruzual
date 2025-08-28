@@ -427,8 +427,9 @@ textarea {
 }
 
 
-/* Para Móviles (hasta 768px) */
+/* Para Móviles (hasta 768px) - CORREGIDO */
 @media (max-width: 768px) {
+    /* 1. Apilamos el título y el menú verticalmente */
     .header-top {
         flex-direction: column;
         gap: 20px;
@@ -441,11 +442,25 @@ textarea {
         text-align: center;
     }
 
+    /* 2. Hacemos que los botones se envuelvan */
     .right-top {
         justify-content: center;
         width: 100%;
-        gap: 15px;
+        gap: 10px;
         font-size: 20px;
+        flex-wrap: wrap; /* Permite que los botones pasen a la siguiente línea */
+    }
+
+    /* 3. Ajustamos el tamaño de los botones */
+    .btn-inicio,
+    .btn-proyectos,
+    .btn-acercademi,
+    .btn-contacto {
+        width: auto;
+        padding: 8px 20px; /* Damos un poco más de espacio lateral */
+        font-size: 18px;
+        flex-grow: 1; /* Hacemos que se estiren para ocupar el espacio */
+        text-align: center;
     }
 
     .first-div-body {
@@ -486,11 +501,7 @@ textarea {
 
     input, textarea {
         width: 100%;
-        box-sizing: border-box; /* Asegura que el padding no desborde */
-    }
-
-    textarea {
-        width: 100%; /* Ancho completo para el textarea */
+        box-sizing: border-box;
     }
 
     #btn-volver-inicio,
@@ -508,4 +519,7 @@ textarea {
         left: 20px;
     }
 }
+
+
+
 
